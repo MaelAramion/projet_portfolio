@@ -3,6 +3,9 @@
 	<head>
 		<title>Mon portfolio</title>
 		<meta charset="UTF-8"/>
+		<meta name="description" content="Portfolio de Maël Aramion">
+		<meta name="keywords" content="développement,cv,portfolio,css,html,php,java">
+		<meta name="robots" content="all">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" media="screen" href="src/css/style.css" />
 	</head>
@@ -17,16 +20,16 @@
 			<div class="w-100">
 				<ul>
 					<li>
-						<a href="#">A propos de moi</a>
+						<a href="#a-propos">A propos de moi</a>
 					</li>
 					<li>
-						<a href="#">Compétences</a>
+						<a href="#competences">Compétences</a>
 					</li>
 					<li>
-						<a href="#">Projets</a>
+						<a href="#projets">Projets</a>
 					</li>
 					<li>
-						<a href="#">Contact</a>
+						<a href="#contact">Me Contacter</a>
 					</li>
 				</ul>
 			</div>
@@ -44,7 +47,7 @@
 		</header>
 
 		<!-- SECTION A PROPOS DE MOI-->
-		<section class="flex-row">
+		<section id="a-propos" class="flex-row">
 			<h2>A propos de moi</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate, erat eget luctus laoreet, nunc dui iaculis nunc, id consequat nibh nisi quis diam. Nam gravida lacus sed ultricies auctor. Nunc non massa interdum, aliquet eros nec, aliquet sapien. Aenean semper
@@ -53,7 +56,7 @@
 
 
 		<!-- SECTION COMPETENCES -->
-		<section class="flex-row">
+		<section id="competences" class="flex-row">
 			<h2>Mes compétences</h2>
 			<div class="flex-row">
 				<div class="flex-col w-100">
@@ -100,7 +103,7 @@
 		</section>
 
 		<!-- SECTION DES PROJETS -->
-		<section class="flex-row">
+		<section id="projets" class="flex-row">
 			<div class="flex-col">
 				<h2>Mes projets</h2>
 				<div class="btn-container">
@@ -126,7 +129,7 @@
 		</section>
 
 		<!-- SECTION CONTACTER -->
-		<section class="flex-col">
+		<section id="contact" class="flex-col">
 			<form action="#" method="post" class="form-contact">
 				<div class="flex-col">
 					<h2>Me contacter</h2>
@@ -141,7 +144,8 @@
 						</div>
 					</div>
 					<div>
-						<input type="text" name="message" placeholder="Votre message...">
+						<textarea type="text" name="message" placeholder="Votre message...">
+						</textarea>
 					</div>
 					<div>
 						<input class="bg-black" type="submit" name="submit" value="Envoyer">
