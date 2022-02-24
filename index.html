@@ -4,48 +4,101 @@
 		<title>Mon portfolio</title>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="src/css/style.css" />
 	</head>
 	
-	<body>
+	<body class="flex-col">
 		
-		<nav class="o-nav">
-			<a href="#">MAËL ARAMION</a>
-			<ul>
-				<li>
-					<a href="#">A propos de moi</a>
-				</li>
-				<li>
-					<a href="#">Compétences</a>
-				</li>
-				<li>
-					<a href="#">Projets</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		<header>
-			<div>
-				<img src="" alt="Moi" title="Maël Aramion"/>
+		<!-- SECTION MENU -->
+		<nav class="menu flex-row bg-black text-light">
+			<div class="w-100">
+				<a href="#">MAËL ARAMION</a>
 			</div>
-			<div>
+			<div class="w-100">
+				<ul>
+					<li>
+						<a href="#">A propos de moi</a>
+					</li>
+					<li>
+						<a href="#">Compétences</a>
+					</li>
+					<li>
+						<a href="#">Projets</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- SECTION HERO-->
+		<header class="flex-row">
+			<div class="w-100">
+				<img src="src/images/placeholder_moi.png" alt="Moi" title="Maël Aramion"/>
+			</div>
+			<div class="w-100">
 				<h1>Je suis Maël Aramion,</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate, era</p>
 			</div>
 		</header>
 
-		<section>
+		<!-- SECTION A PROPOS DE MOI-->
+		<section class="flex-row">
 			<h2>A propos de moi</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate, era</p>
 		</section>
 
-		<section>
+
+		<!-- SECTION COMPETENCES -->
+		<section class="flex-row">
 			<h2>Mes compétences</h2>
-			<div>
-				
+			<div class="flex-row">
+				<div class="flex-col w-100">
+					<div class="flex-row">
+						<div>
+							<img src="src/images/html.png" title="HTML" alt="HTML">
+						</div>
+						<div class="skill-html"></div>
+					</div>
+					<div class="flex-row">
+						<div>
+							<img src="src/images/css.png" title="CSS" alt="CSS">
+						</div>
+						<div class="skill-css"></div>
+					</div>
+					<div class="flex-row">
+						<div>
+							<img src="src/images/php.png" title="PHP" alt="PHP">
+						</div>
+						<div class="skill-php"></div>
+					</div>
+				</div>
+				<div class="flex-col w-100">
+					<div class="flex-row">
+						<div>
+							<img src="src/images/java.png" title="JAVA" alt="JAVA">
+						</div>
+						<div class="skill-java"></div>
+					</div>
+					<div class="flex-row">
+						<div>
+							<img src="src/images/c#.png" title="C#" alt="C#">
+						</div>
+						<div class="skill-c#"></div>
+					</div>
+					<div class="flex-row">
+						<div>
+							<img src="src/images/bootstrap.svg" title="bootstrap" alt="bootstrap">
+						</div>
+						<div class="skill-bootstrap"></div>
+					</div>
+				</div>
 			</div>
+		</section>
+
+		<section class="">
+			
 		</section>
 
 	</body>
