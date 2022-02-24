@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/sass,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=sass,node
+# Created by https://www.toptal.com/developers/gitignore/api/node,sass,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,sass,visualstudiocode
 
 ### Node ###
 # Logs
@@ -148,4 +148,25 @@ dist
 *.sass.map
 *.scss.map
 
-# End of https://www.toptal.com/developers/gitignore/api/sass,node
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Support for Project snippet scope
+
+# End of https://www.toptal.com/developers/gitignore/api/node,sass,visualstudiocode
