@@ -15,6 +15,10 @@ body{
 .menu li{
     display: inline;
 }
+/*competence*/
+.skill-icon{
+    width: 7rem;
+}
 /* utils */
 .align{
     margin-left: 3rem;
