@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<title>Mon portfolio</title>
 		<meta charset="UTF-8"/>
@@ -13,117 +13,135 @@
 	<body class="flex-col">
 		
 		<!-- SECTION MENU -->
-		<nav class="menu flex-row bg-black text-light">
-			<div class="w-100">
-				<a href="#">MAËL ARAMION</a>
-			</div>
-			<div class="w-100">
-				<ul>
-					<li>
-						<a href="#a-propos">A propos de moi</a>
-					</li>
-					<li>
-						<a href="#competences">Compétences</a>
-					</li>
-					<li>
-						<a href="#projets">Projets</a>
-					</li>
-					<li>
-						<a href="#contact">Me Contacter</a>
-					</li>
-				</ul>
+		<nav class="menu bg-black text-light">
+			<div class="flex-row align-nav">
+				<div class="menu-col-1 flex-row w-100">
+					<a href="#">MAËL ARAMION</a>
+				</div>
+				<div class="menu-col-2 flex-row w-100">
+					<ul>
+						<li>
+							<a class="text-light" href="#a-propos">À propos de moi</a>
+						</li>
+						<li>
+							<a class="text-light" href="#competences">Compétences</a>
+						</li>
+						<li>
+							<a class="text-light" href="#projets">Projets</a>
+						</li>
+						<li>
+							<a class="text-light" href="#contact">Me Contacter</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
 		<!-- SECTION HERO-->
-		<header class="flex-row">
-			<div class="w-100">
+		<header class="hero flex-row">
+			<div class="w-100 hero-col-1">
 				<img src="src/images/placeholder_moi.png" alt="Moi" title="Maël Aramion"/>
 			</div>
-			<div class="w-100">
+			<div class="w-100 hero-col-2">
 				<h1>Je suis Maël Aramion,</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate, era</p>
 			</div>
 		</header>
 
 		<!-- SECTION A PROPOS DE MOI-->
-		<section id="a-propos" class="flex-row">
-			<h2>A propos de moi</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate, erat eget luctus laoreet, nunc dui iaculis nunc, id consequat nibh nisi quis diam. Nam gravida lacus sed ultricies auctor. Nunc non massa interdum, aliquet eros nec, aliquet sapien. Aenean semper
-			</p>
+		<section id="a-propos" class="flex-row about-me bg-black text-light">
+			<div class="container flex-col align">
+				<h2>A propos de moi</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate, erat eget luctus laoreet, nunc dui iaculis nunc, id consequat nibh nisi quis diam. Nam gravida lacus sed ultricies auctor. Nunc non massa interdum, aliquet eros nec, aliquet sapien. Aenean semper
+				</p>
+			</div>
 		</section>
 
 
 		<!-- SECTION COMPETENCES -->
-		<section id="competences" class="flex-row">
+		<section id="competences" class="flex-col skill align">
 			<h2>Mes compétences</h2>
 			<div class="flex-row">
-				<div class="flex-col w-100">
-					<div class="flex-row">
+				<div class="flex-col skill-col-1 w-100">
+					<div class="flex-row skill-box">
 						<div>
 							<img class="skill-icon" src="src/images/html.png" title="HTML" alt="HTML">
 						</div>
-						<div class="skill-html"></div>
+						<div class="skill-container">
+							<div class="skill-html bg-black"></div>
+						</div>
 					</div>
-					<div class="flex-row">
+					<div class="flex-row skill-box">
 						<div>
 							<img class="skill-icon" src="src/images/css.png" title="CSS" alt="CSS">
 						</div>
-						<div class="skill-css"></div>
+						<div class="skill-container">
+							<div class="skill-css bg-black"></div>
+						</div>
 					</div>
-					<div class="flex-row">
+					<div class="flex-row skill-box">
 						<div>
 							<img class="skill-icon" src="src/images/php.png" title="PHP" alt="PHP">
 						</div>
-						<div class="skill-php"></div>
+						<div class="skill-container">
+							<div class="skill-php bg-black"></div>
+						</div>
 					</div>
 				</div>
-				<div class="flex-col w-100">
-					<div class="flex-row">
+				<div class="flex-col skill-col-2 w-100">
+					<div class="flex-row skill-box">
 						<div>
 							<img class="skill-icon" src="src/images/java.png" title="JAVA" alt="JAVA">
 						</div>
-						<div class="skill-java"></div>
-					</div>
-					<div class="flex-row">
-						<div>
-							<img class="skill-icon" src="src/images/c#.png" title="C#" alt="C#">
+						<div class="skill-container">
+							<div class="skill-java bg-black"></div>
 						</div>
-						<div class="skill-c#"></div>
 					</div>
-					<div class="flex-row4">
+					<div class="flex-row skill-box">
 						<div>
-							<img class="skill-icon" src="src/images/bootstrap.svg" title="bootstrap" alt="bootstrap">
+							<img class="skill-icon" src="src/images/c.png" title="C#" alt="C#">
 						</div>
-						<div class="skill-bootstrap"></div>
+						<div class="skill-container">
+							<div class="skill-c bg-black"></div>
+						</div>
+					</div>
+					<div class="flex-row skill-box">
+						<div>
+							<img class="skill-icon" src="src/images/bootstrap.png" title="bootstrap" alt="bootstrap">
+						</div>
+						<div class="skill-container">
+							<div class="skill-bootstrap bg-black"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- SECTION DES PROJETS -->
-		<section id="projets" class="flex-row">
-			<div class="flex-col">
-				<h2>Mes projets</h2>
-				<div class="btn-container">
-					<button class="bg-black">
-						<img src="src/images/caret-left-fill.svg" alt="" title=""/>
-					</button>
-					<button class="bg-black">
-						<img src="src/images/caret-right-fill.svg" alt="" title=""/>
-					</button>
+		<section id="projets" class="projet-section bg-black text-light">
+			<div class="flex-row align">
+				<div class="flex-col projet-btn">
+					<h2>Mes projets</h2>
+					<div class="btn-container">
+						<button class="bg-white btn-left">
+							<img src="src/images/caret-left-fill.svg" alt="" title=""/>
+						</button>
+						<button class="bg-white btn-right">
+							<img src="src/images/caret-right-fill.svg" alt="" title=""/>
+						</button>
+					</div>
 				</div>
-			</div>
-			<div class="flex-row">
-				<div class="flex-col w-100">
-					<img src="src/images/placeholder_projet.png" alt="placeholder_projet" title="placeholder">
-				</div>
-				<div class="flex-col w-100">
-					<img src="src/images/placeholder_projet.png" alt="placeholder_projet" title="placeholder">
-				</div>
-				<div class="flex-col w-100">
-					<img src="src/images/placeholder_projet.png" alt="placeholder_projet" title="placeholder">
+				<div class="flex-row projets">
+					<div class="flex-col w-auto projet">
+						<img src="src/images/placeholder_projet.png" alt="placeholder_projet" title="placeholder">
+					</div>
+					<div class="flex-col w-auto projet">
+						<img src="src/images/placeholder_projet.png" alt="placeholder_projet" title="placeholder">
+					</div>
+					<div class="flex-col w-auto projet">
+						<img src="src/images/placeholder_projet.png" alt="placeholder_projet" title="placeholder">
+					</div>
 				</div>
 			</div>
 		</section>
