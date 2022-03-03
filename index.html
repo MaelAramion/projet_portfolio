@@ -148,44 +148,46 @@
 
 		<!-- SECTION CONTACTER -->
 		<section id="contact" class="flex-col">
-			<form action="#" method="post" class="form-contact">
-				<div class="flex-col">
-					<h2>Me contacter</h2>
-					<div class="flex-row">
-						<div class="flex-col">
-							<input type="text" name="prenom" placeholder="Prénom">
-							<input type="text" name="nom" placeholder="Email">
+			<div class="align">
+				<form action="#" method="post" class="form-contact">
+					<div class="flex-col">
+						<h2>Me contacter</h2>
+						<div class="flex-row">
+							<div class="flex-col w-100 input-col-1">
+								<input type="text" name="prenom" placeholder="Prénom">
+								<input type="text" name="email" placeholder="Email">
+							</div>
+							<div class="flex-col w-100 input-col-2">
+								<input type="text" name="nom" placeholder="Nom">
+								<input type="text" name="tel" placeholder="Téléphone">
+							</div>
 						</div>
-						<div class="flex-col">
-							<input type="text" name="nom" placeholder="Nom">
-							<input type="text" name="tel" placeholder="Téléphone">
+						<div class="w-100">
+							<textarea type="text" name="message" placeholder="Votre message...">
+							</textarea>
+						</div>
+						<div class="flex-row">
+							<button class="bg-black text-light" name="submit">Envoyer</button>
 						</div>
 					</div>
-					<div>
-						<textarea type="text" name="message" placeholder="Votre message...">
-						</textarea>
-					</div>
-					<div>
-						<input class="bg-black" type="submit" name="submit" value="Envoyer">
-					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</section>
 
 
 		<!-- SECTION footer -->
-		<footer>
-			<ul>
-				<li>
-					<a href="">mael.aramion@gmail.com</a>
-				</li>
-				<li>
+		<footer class="bg-black text-light">
+			<div class=" align flex-row infos">
+				<div class="w-100 info flex-col">
+					<a href="mailto:mael.aramion@gmail.com">mael.aramion@gmail.com</a>
+				</div>
+				<div class="w-100 info flex-col">
 					<p>00.00.00</p>
-				</li>
-				<li>
-					<p>Rue Ipsum</p>
-				</li>
-			</ul>
+				</div>
+				<div class="w-100 info flex-col">
+					<p>Rue IPSUM</p>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
